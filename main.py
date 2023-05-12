@@ -85,6 +85,3 @@ def HGB(hgb_count, gender):
 
 
 request()
-
-
-

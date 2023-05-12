@@ -6,8 +6,8 @@ def request():
     (WBC(wbc_count, gender))
     plt_count = input("Enter Platelets Count:")
     (PLT(plt_count, gender))
-    # hct_count = input("Enter Hematocrit Count:")
-    # hgb_count = input("Enter Hemoglobin Count:")
+    hct_count = input("Enter Hematocrit Count:")
+    hgb_count = input("Enter Hemoglobin Count:")
 
 
 def RBC(rbc_count, gender):

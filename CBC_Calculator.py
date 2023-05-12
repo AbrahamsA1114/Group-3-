@@ -28,29 +28,29 @@ def WBC (wbc_count, gender):
     if (str(gender)== "male" and float(wbc_count)>=3.6 and float(wbc_count)<=10.6):
         print("WBC Count = Normal")
     elif (str(gender)== "male" and float(wbc_count)>10.6):
-        print("WBC Count = High/ Leukocytosis")
+        print("WBC Count = High")
     elif(str(gender)=="male" and float(wbc_count)<3.6):
-        print("WBC Count = Low/ Leukopenia")
+        print("WBC Count = Low")
     elif (str(gender)=="female" and float(wbc_count)>=3.6 and float(wbc_count)<=10.6):
         print("WBC Count = Normal")
     elif (str(gender)== "female" and float(wbc_count)>10.6):
-        print ("WBC Count = High/ Leukocytosis")
+        print ("WBC Count = High")
     elif (str(gender)== "female" and float(wbc_count)<3.6):
-        print("WBC Count = Low/ Leukopenia")
+        print("WBC Count = Low")
 
 def PLT (plt_count , gender):
     if (str (gender)== "male"  and float(plt_count)>=150 and float(plt_count)<=450):
         print("PLT Count = Normal")
     elif (str(gender)=="male" and float(plt_count)>450):
-        print("PLT Count = High/ Thrombocytosis")
+        print("PLT Count = High")
     elif (str(gender)== "male" and float(plt_count)<150):
-        print("PLT Count = Low/ Thrombocytopenia")
+        print("PLT Count = Low")
     elif (str(gender)== "female" and float(plt_count)>=150 and float(plt_count)<=450):
         print("PLT Count = Normal")
     elif (str(gender)== "female" and float(plt_count)>450):
-        print("PLT Count = High/ Thrombocytosis")
+        print("PLT Count = High")
     elif (str(gender)== "female" and float(plt_count)<150):
-        print("PLT Count = Low/ Thrombocytopenia")
+        print("PLT Count = Low")
 request()
 
 

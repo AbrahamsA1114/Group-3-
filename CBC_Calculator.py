@@ -32,7 +32,7 @@ def WBC (wbc_count, gender):
     elif (str(gender)== "male" and float(wbc_count)>10.6):
         print("WBC Count = High")
     elif(str(gender)=="male" and float(wbc_count)<3.6):
-        print("WBC Count = Low")
+        print("WBC Count = Low/Leukopenia")
     elif (str(gender)=="female" and float(wbc_count)>=3.6 and float(wbc_count)<=10.6):
         print("WBC Count = Normal")
     elif (str(gender)== "female" and float(wbc_count)>10.6):

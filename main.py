@@ -3,9 +3,11 @@ def request():
     rbc_count = input("Enter Red Blood Cell Count:")
     (RBC(rbc_count, gender))
     wbc_count = input("Enter White Blood Cell Count:")
+    (WBC(wbc_count, gender))
     plt_count = input("Enter Platelets Count:")
-    hct_count = input("Enter Hematocrit Count:")
-    hgb_count = input("Enter Hemoglobin Count:")
+    (PLT(plt_count, gender))
+    # hct_count = input("Enter Hematocrit Count:")
+    # hgb_count = input("Enter Hemoglobin Count:")
 
 
 def RBC(rbc_count, gender):
@@ -22,6 +24,33 @@ def RBC(rbc_count, gender):
     elif(str(gender)== "female" and float(rbc_count)>5.2):
         print ("RBC Count= High/Polycythemia")
 
+def WBC (wbc_count, gender):
+    if (str(gender)== "male" and float(wbc_count)>=3.6 and float(wbc_count)<=10.6):
+        print("WBC Count = Normal")
+    elif (str(gender)== "male" and float(wbc_count)>10.6):
+        print("WBC Count = High")
+    elif(str(gender)=="male" and float(wbc_count)<3.6):
+        print("WBC Count = Low")
+    elif (str(gender)=="female" and float(wbc_count)>=3.6 and float(wbc_count)<=10.6):
+        print("WBC Count = Normal")
+    elif (str(gender)== "female" and float(wbc_count)>10.6):
+        print ("WBC Count = High")
+    elif (str(gender)== "female" and float(wbc_count)<3.6):
+        print("WBC Count = Low")
+
+def PLT (plt_count , gender):
+    if (str (gender)== "male"  and float(plt_count)>=150 and float(plt_count)<=450):
+        print("PLT Count = Normal")
+    elif (str(gender)=="male" and float(plt_count)>450):
+        print("PLT Count = High")
+    elif (str(gender)== "male" and float(plt_count)<150):
+        print("PLT Count = Low")
+    elif (str(gender)== "female" and float(plt_count)>=150 and float(plt_count)<=450):
+        print("PLT Count = Normal")
+    elif (str(gender)== "female" and float(plt_count)>450):
+        print("PLT Count = High")
+    elif (str(gender)== "female" and float(plt_count)<150):
+        print("PLT Count = Low")
 request()
 
 

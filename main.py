@@ -66,7 +66,7 @@ def HCT(hct_count, gender):
     elif(str(gender)=="female" and float(hct_count)<0.35):
         print("HCT Count = Low/Anemia")
     elif(str(gender)=="female" and float(hct_count)>0.49):
-        print("HCT Count = High?polycythemia")
+        print("HCT Count = High/polycythemia")
 
 def HGB(hgb_count, gender):
     if(str(gender)=="male" and float(hgb_count)>=135 and float(hgb_count)<=180):

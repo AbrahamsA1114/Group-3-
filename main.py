@@ -1,4 +1,6 @@
 def request():
+    name = input("Enter name:")
+    age = input("Enter age:")
     gender = input("Enter Gender:")
     rbc_count = input("Enter Red Blood Cell Count:")
     (RBC(rbc_count, gender))

@@ -1,7 +1,7 @@
 def request():
     name = input("Enter name:")
     age = input("Enter age:")
-    gender = input("Enter Gender:")
+    gender = (input("Enter Gender:")).lower()
     rbc_count = input("Enter Red Blood Cell Count:")
     (RBC(rbc_count, gender))
     wbc_count = input("Enter White Blood Cell Count:")
@@ -73,6 +73,3 @@ def HGB(hgb_count, gender):
         print("HGB Count = High/Polycythemia")
 
 request()
-
-
-

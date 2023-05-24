@@ -29,31 +29,19 @@ def RBC(rbc_count, gender):
         print ("RBC Count= High/Polycythemia")
 
 def WBC (wbc_count, gender):
-    if (str(gender)== "male" and float(wbc_count)>=3.6 and float(wbc_count)<=10.6):
+    if (str(gender)== "male" or str(gender)=="female" and float(wbc_count)>=3.6 and float(wbc_count)<=10.6):
         print("WBC Count = Normal")
-    elif (str(gender)== "male" and float(wbc_count)>10.6):
+    elif (str(gender)== "male" or str(gender)=="female" and float(wbc_count)>10.6):
         print("WBC Count = High/Leukocytosis")
-    elif(str(gender)=="male" and float(wbc_count)<3.6):
-        print("WBC Count = Low/Leukopenia")
-    elif (str(gender)=="female" and float(wbc_count)>=3.6 and float(wbc_count)<=10.6):
-        print("WBC Count = Normal")
-    elif (str(gender)== "female" and float(wbc_count)>10.6):
-        print ("WBC Count = High/Leukocytosis")
-    elif (str(gender)== "female" and float(wbc_count)<3.6):
+    elif(str(gender)=="male" or str(gender)=="female" and float(wbc_count)<3.6):
         print("WBC Count = Low/Leukopenia")
 
 def PLT (plt_count , gender):
-    if (str (gender)== "male"  and float(plt_count)>=150 and float(plt_count)<=450):
+    if (str (gender)== "male" or str(gender)=="female" and float(plt_count)>=150 and float(plt_count)<=450):
         print("PLT Count = Normal")
-    elif (str(gender)=="male" and float(plt_count)>450):
+    elif (str(gender)=="male" or str(gender)=="female" and float(plt_count)>450):
         print("PLT Count = High/Thrombocytosis")
-    elif (str(gender)== "male" and float(plt_count)<150):
-        print("PLT Count = Low/Thrombocytopenia")
-    elif (str(gender)== "female" and float(plt_count)>=150 and float(plt_count)<=450):
-        print("PLT Count = Normal")
-    elif (str(gender)== "female" and float(plt_count)>450):
-        print("PLT Count = High/Thrombocytosis")
-    elif (str(gender)== "female" and float(plt_count)<150):
+    elif (str(gender)== "male" or str(gender)=="female" and float(plt_count)<150):
         print("PLT Count = Low/Thrombocytopenia")
 
 def HCT(hct_count, gender):
